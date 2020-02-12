@@ -1,0 +1,52 @@
+@media all and (max-width:1200px) {
+	a {
+		font-size: 0.875em;
+	}
+	.intro > article {
+	  width:89.5%;
+	}
+	.intro {
+	  margin:180px 0 0;
+	}
+	.intro h2 {
+		margin:0;
+		width:100%;
+		font-size: 3em;
+	}
+	.container {
+		width:89.5%;
+	}
+	.wrap{
+		width:91%;
+	}
+	.wrap > article {
+	    float: left;
+	    width:31.944444444%;
+	    margin:0 0.69% 5% 0.69%;
+	  }
+	/*.imgBox>a {
+		position:relative;
+	}
+	.imgBox>a>h3,span{
+		font-size: 0.938em;
+		position:absolute;
+	}
+	.imgBox>a>h3 {
+		left:0;
+		font-weight: bold;
+		bottom: -20px;
+	}
+	.imgBox>a>span {
+		right:0;
+		bottom: -25px;
+	}
+	
+	.imgBox>a:hover .screen{
+		color:#000;
+	}
+	*/
+	footer>span>div {
+		margin:400px auto;
+	}
+
+}

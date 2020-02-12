@@ -1,0 +1,358 @@
+@charset "utf-8";
+#close {
+  display: none;
+}
+
+.sub_img {
+  width:100%;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  color:#000;
+}
+a {
+  color:#000;
+}
+.page-header {
+  background: #fff;
+  padding-top:20px;
+  height: 85px;
+  line-height: 36.5px;
+}
+.container {
+  width:75%;
+  margin:0 auto;
+  
+}
+.menu > li {
+  padding-top:10px;
+  cursor: pointer;
+}
+.menu > li {
+  float: left;
+
+}
+.mn-lt > li {
+  margin-right:1.2em;
+}
+
+.mn-rt {
+  float: right;
+}
+.mn-rt > li {
+  margin-left:1.2em;
+}
+.pull-right {
+  position:relative;
+}
+ h1 > a{
+  background: url(../images/logo.png) no-repeat;
+  height:40px;
+  width:85px;
+  position:absolute;
+  right:50%;
+  left:50%;
+  margin-left:-42.5px;
+  text-indent: -9999px;
+}
+ #trigger {
+  display: none;
+}
+
+
+/* - - - Relevant to demo 건드리지말기- - - */
+.page-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  transition: top 0.6s;
+}
+.page-header.off-canvas { 
+  top: -89px; 
+}
+.page-header.fixed {
+  top: 0;
+  z-index: 9999;
+}
+/****/
+
+.intro {
+  width:100%;
+  margin:220px 0 100px;
+  position:relative;
+
+}
+.intro > article {
+  width:75%;
+  margin:0 auto;
+  position:relative;
+}
+.intro h2 {
+    font-family: PT Serif, serif;
+    font-weight: 700;
+    font-size: 3.5em;
+    line-height: 1;
+    float: left;
+    width:100%;
+    margin-left:2%;
+    letter-spacing: -2px;
+
+}
+.intro p {
+  position:absolute;
+  bottom:-100px;
+  right:0;
+  line-height: 1.4;
+  font-size: 1.1em;
+  width:45%;
+  letter-spacing: -1px;
+}
+
+
+
+
+.wrap {
+  width:75%;
+  margin:0 auto;
+  padding-top: 90px;
+  overflow: hidden;
+  z-index: 100;
+}
+.wrap > article {
+    float: left;
+    background-repeat:no-repeat;
+    width:31.944444444%;
+    height: 480px;
+    margin:0 0.69% 5% 0.69%;
+  }
+.bg, .imgBox {
+  height: 100%;
+}
+
+.hide {
+  display: none;
+  text-align: center;
+  color:#fff;
+  line-height: 1.2;
+}
+.hide>h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+
+.imgBox>a:hover {
+  transition-duration: 1s;
+  position:relative;
+}
+.imgBox>a:hover .hide {
+  display: block;
+}
+
+/*.imgBox>a:hover .hide{
+  display: block;
+}*/
+.wrap > article .bg > .imgBox {
+  background-size:cover;
+}
+.wrap > article:nth-of-type(1) .bg > .imgBox {
+  background-image: url(../images/bean_order.jpg);
+}
+.wrap > article:nth-of-type(1) .bg > .imgBox>a:hover {
+  background-color: #F3D31F;
+
+}
+
+.wrap > article:nth-of-type(2) .bg > .imgBox {
+    background-image: url(../images/with_flower.jpg);
+}
+.wrap > article:nth-of-type(2) .bg > .imgBox>a:hover {
+   background-color: #F29D36;
+
+}
+
+
+.wrap > article:nth-of-type(3) .bg > .imgBox {
+  background-image: url(../images/doriya.jpg);
+}
+.wrap > article:nth-of-type(3) .bg > .imgBox>a:hover {
+  background-color: #86C653;
+
+}
+
+.wrap > article:nth-of-type(4) .bg > .imgBox {
+  background-image: url(../images/on_friend.jpg);
+}
+.wrap > article:nth-of-type(4) .bg > .imgBox>a:hover {
+   background-color: #269560;
+
+}
+
+
+.wrap > article:nth-of-type(5) .bg > .imgBox {
+  background-image: url(../images/campaign.jpg);
+}
+.wrap > article:nth-of-type(5) .bg > .imgBox>a:hover {
+  background-color: #2F7AB3;
+
+}
+
+.wrap > article:nth-of-type(6) .bg > .imgBox {
+  background-image: url(../images/promotion_1.jpg);
+}
+.wrap > article:nth-of-type(6) .bg > .imgBox>a:hover {
+  background-color: #755D49;
+
+}
+
+
+.wrap > article:nth-of-type(7) .bg > .imgBox {
+  background-image: url(../images/blueprint.jpg);
+}
+.wrap > article:nth-of-type(7) .bg > .imgBox>a:hover {
+  background-color: #23D7C0;
+
+}
+
+.wrap > article:nth-of-type(8) .bg > .imgBox {
+  background-image: url(../images/car.jpg);
+}
+.wrap > article:nth-of-type(8) .bg > .imgBox>a:hover {
+  background-color: #AE0606;
+ 
+}
+
+.wrap > article:nth-of-type(9) .bg > .imgBox {
+  background-image: url(../images/pf_03.jpg);
+}
+.wrap > article:nth-of-type(9) .bg > .imgBox>a:hover {
+  background-color: #68543F;
+
+}
+
+.wrap > article:nth-of-type(10) .bg > .imgBox {
+  background-image: url(../images/pf_04.jpg);
+}
+.wrap > article:nth-of-type(10) .bg > .imgBox>a:hover {
+  background-color: #653D45;
+
+}
+
+.wrap > article:nth-of-type(11) .bg > .imgBox {
+  background-image: url(../images/pf_06.jpg);
+}
+.wrap > article:nth-of-type(11) .bg > .imgBox>a:hover {
+  background-color: #653D45;
+
+}
+
+.wrap > article:nth-of-type(12) .bg > .imgBox {
+  background-image: url(../images/pf_01.jpg);
+}
+.wrap > article:nth-of-type(12) .bg > .imgBox>a:hover {
+  background-color: #653D45;
+}
+
+/**//*.imgBox h3,span{
+    font-size: 0.938em;
+    position:absolute;
+    display: block;
+  }*/
+
+  .imgBox>a> h3,.imgBox>a>span {
+    position:absolute;
+    bottom:0;
+  }
+/**********************************************/
+.imgBox>a {
+  display: block;
+  width:100%;
+  height:100%;
+  position:relative;
+}
+.imgBox div {
+    padding-top:45%; 
+}
+/*.imgBox h3, span {
+  display: block;
+/*  text-align: center;
+}*/
+/*.imgBox h3 {
+  font-size: 1.7em;
+}*/
+/**/.imgBox>a>h3 {
+    left:0;
+    font-weight: bold;
+    bottom: -27px;.
+    font-size: 1.7em;
+  }
+  /**/.imgBox>a>span {
+    font-size: 0.938em;
+    line-height: 2;
+    right:0;
+    bottom: -20px;
+  }
+/*.imgBox span {
+  font-size: 0.938em;
+  line-height: 2;
+}*/
+/**/.screen{
+    color:#000;
+    height: 20px;
+  }
+
+footer {
+  width:100%;
+  overflow: hidden;
+  text-align: center;
+}
+footer>span {
+  display: block;
+  width:75%;
+  margin:0 auto;
+  position: relative;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+footer>span>div {
+  font-family: serif;
+  font-weight: bold;
+  letter-spacing: -25px;
+
+  display: inline;
+  height: 100px;
+  width:100%;
+  font-size: 15.625em;
+  float: left;
+  margin:400px auto;
+  cursor: pointer;
+  
+}
+footer p {
+  width:100%;
+  margin:30px auto;
+
+}
+
+/*.fotOn {
+  text-decoration: line-through;
+  transition-duration: 1s;
+}*/
+/*.fotBg {
+  background-color:#000;
+  color:#fff;
+}*/
+/*#about:hover .wrap{
+  background-color:#000;
+  color:#fff;
+}
+*/
+
+.menu li:hover a{
+  text-decoration: line-through;
+}

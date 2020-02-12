@@ -1,0 +1,110 @@
+@charset "utf-8";
+#close {
+  display: none;
+}
+.sub_img {
+  width:100%;
+}
+body {
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  color:#000;
+}
+a {
+  color:#000;
+}
+.page-header {
+  background: #fff;
+  padding-top:20px;
+  height: 85px;
+  line-height: 36.5px;
+}
+.container {
+  width:75%;
+  margin:0 auto;
+  
+}
+.menu > li {
+  padding-top:10px;
+  cursor: pointer;
+}
+.menu > li {
+  float: left;
+
+}
+.mn-lt > li {
+  margin-right:1.2em;
+}
+
+.mn-rt {
+  float: right;
+}
+.mn-rt > li {
+  margin-left:1.2em;
+}
+.pull-right {
+  position:relative;
+}
+ h1 > a{
+  background: url(../images/logo.png) no-repeat;
+  height:40px;
+  width:85px;
+  position:absolute;
+  right:50%;
+  left:50%;
+  margin-left:-42.5px;
+  text-indent: -9999px;
+}
+ #trigger {
+  display: none;
+}
+/* - - - Relevant to demo 건드리지말기- - - */
+.page-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  transition: top 0.6s;
+}
+.page-header.off-canvas { 
+  top: -89px; 
+}
+.page-header.fixed {
+  top: 0;
+  z-index: 9999;
+}
+/****/
+footer {
+  width:100%;
+  overflow: hidden;
+  text-align: center;
+}
+footer>span {
+  display: block;
+  width:75%;
+  margin:0 auto;
+  position: relative;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+footer>span>div {
+  font-family: serif;
+  font-weight: bold;
+  letter-spacing: -25px;
+  display: inline;
+  height: 100px;
+  width:100%;
+  font-size: 15.625em;
+  float: left;
+  margin:400px auto;
+  cursor: pointer; 
+}
+footer p {
+  width:100%;
+  margin:30px auto;
+}
+.menu li:hover a{
+  text-decoration: line-through;
+}

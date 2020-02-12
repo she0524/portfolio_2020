@@ -1,0 +1,191 @@
+@media all and (max-width:1199px) {
+.subwrap {
+	width:98%;
+}
+.mainImg {
+	margin-right:20px;
+	width:390px;
+}
+.mainImg > img {
+	width:390px;
+}
+.smImg > li {
+	margin-right: 10px;
+}
+.info {
+	width:50%;
+	margin-bottom: 0;
+}
+/*수량*/
+.quantity {
+	width:20%;
+}
+/*장바구니*/
+#cart {
+	width:75%;
+}
+
+/*배송설명*/
+.deliver > article {
+	width:48.2%;
+}
+.deliver {
+	padding:42px 70px;
+}
+footer {
+	margin-top:35px;
+}
+}
+
+/****************************************************************iPad****/
+
+@media all and (max-width:1023px) {
+.subwrap {
+	width:98%;
+}
+.gallery {
+	position:relative;
+}
+.smImg {
+	z-index: 10;
+	position:absolute;
+	height: 58px;
+	left:1%;
+	bottom:-62px;
+
+}
+.mainImg {
+	width:350px;
+}
+.mainImg > img {
+	width:350px;
+}
+.smImg > li {
+	width:50px;
+	float: left;
+}
+.smImg > li > img {
+	width:50px;
+	height: 68px;
+}
+.info {
+	width:50%;
+	margin-bottom: 0;
+}
+.baseIf > h3 {
+	line-height: 25px;
+}
+.baseIf>h4:nth-of-type(1) {
+	margin-top:15px;
+	margin-bottom:7px;
+}
+/*수량+장바구니+관심상품*/
+.cartwrap {
+	padding-top: 20px;
+}
+/*수량*/
+.quantity {
+	width:25%;
+
+}
+/*장바구니*/
+#cart {
+	width:65%;
+}
+.cart {
+	width:100%;
+}
+.wish {
+	padding-top:8px;
+}
+
+/*상세정보*/
+.btnG > li {
+	margin-top:20px;
+	font-size: 12px;
+}
+.subG > li {
+	padding-right:10px;
+}
+
+/*배송설명*/
+.deliver > article {
+	width:47%;
+}
+.deliver {
+	padding:48px 50px;
+}
+footer {
+	margin-top:20px;
+}
+}
+
+
+/****************************************************************iphone****/
+@media all and (max-width:760px) {
+.subwrap {
+	margin-top:20px;
+	width:100%;
+}
+
+.mainImg {
+	width:100%;
+	border-right:none;
+	border-left: none;
+	height: 480px;
+}
+.mainImg > img {
+	width:100%;
+	height: 480px;
+}
+.smImg {
+	left:50%;
+	margin-left:-100px;
+	bottom:-66px;
+}
+.smImg > li {
+	width:40px;
+	float: left;
+	margin-bottom: 0;
+	margin:0 5px;
+}
+.smImg > li > img {
+	width:40px;
+	height: auto;
+}
+.info {
+	width:98%;
+	margin:82px 1% 0 1%;
+}
+.baseIf>h4:nth-of-type(1) {
+	margin-top:10px;
+}
+/*수량+장바구니+관심상품*/
+.cartwrap {
+}
+/*수량*/
+.quantity {
+	width:30%;
+}
+/*장바구니*/
+#cart {
+	width:65%;
+	margin-left:5%;
+}
+.cart {
+	width:100%;
+}
+
+/*배송설명*/
+.deliver > article {
+	width:98%;
+	margin-top:15px;
+}
+.deliver {
+	padding:30px 2%;
+}
+footer {
+	margin-top:20px;
+}
+
+}

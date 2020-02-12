@@ -1,0 +1,152 @@
+@media all and (max-width:629px) {
+	/* h1 > a {
+		 background: url(../images/logo_02.png) no-repeat;
+		 height:32px;
+		 width:70px;
+		 position:absolute;
+		 right:50%;
+		 left:50%;
+		 margin-left:-35px;
+		 z-index: 9999;
+	}*/
+	h1 > a {
+		background: url(../images/logo_02.png) no-repeat;
+		height:23px;
+		 width:50px;
+		 position:absolute;
+		 right:50%;
+		 left:50%;
+		 margin-left:-25px;
+		 top:10px;
+	}
+
+	.page-header {
+		padding-top:10px;
+		height: 60px;
+	}
+	.wrap {
+		width:89.825119%;/*565px*/
+		padding-top: 100px;
+	}
+	.wrap > article {
+		width:100%;
+	}
+
+	footer>span>div {
+		margin:350px auto 250px;
+		font-size:5em;
+		letter-spacing:-5px;
+	}
+
+	nav {
+		position:relative;
+
+	}
+	
+	#trigger,#close {
+		background: url(../images/menu.png) no-repeat;
+		display: block;
+		width:27px;
+		height: 20px;
+		cursor: pointer;
+		position: absolute;
+		top:35px;
+		left:3%;
+		text-indent: -9999px;
+	}
+	#close {
+		background-position: -31px 0;
+		left:70%;
+	}
+	.container > #trigger {
+		top:15px;
+	}
+	header {
+		z-index: 1000;
+	}
+	.container { 
+	width:100%; 
+	z-index: 9998;
+	position:relative;
+	height: 50px;
+
+	}
+	.wrap {
+		padding-top: 60px;
+	}
+	span.screen {
+		margin-right: 3px;
+	}
+	.menu {
+		width:180px;
+
+		background-color: #fff;
+	}
+	.menu li {
+		display: block;
+		width:100%;
+		height: 100%;
+
+	}
+	
+	.pull-right {  /*메뉴!~!~!~~! 슬라이딩 효과 내려고 레프트로 숨겨놓음.꺼내는걸못함*/
+		position: relative;
+		width:170px;
+		height: 800px;
+		background-color: #fff;
+		font-size: 1.2em;
+		top:-20px;
+		left:-250px;
+	 }
+	
+	.menu li a{
+		display: block;
+		width:100%;
+		float: none;
+		background-color: #fff;
+		display: inline-block;
+		padding:0;
+	}
+	.mn-lt {
+		position:absolute;
+		top:60px;
+		width:110px;
+		padding-left: 50px;
+		display: block;
+		float: left;
+	}
+	.mn-rt {
+		float: left;
+		position:absolute;
+		left:0;
+		top:150px;
+		width:110px;
+		padding-left: 40px;
+
+	}
+	.mn-rt li {
+		width:95px;
+		font-size:0.813em;
+		line-height: 1.1em;
+	}
+
+	.intro {
+	  margin:100px 0 0;
+	}
+
+	.intro h2 {
+		font-size: 2em;
+	}
+	.intro p {
+		top:90px;
+		font-size: 0.98em;
+	}
+	.wrap {
+	  padding-top: 150px;
+	}
+
+	footer>span>div {
+		margin-top:280px;
+		margin-bottom: 200px;
+	}
+}

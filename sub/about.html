@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--뷰포트 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>SHE's</title>
+<style>
+/*font-family: 'PT Serif', serif;*/
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+/*font-family: 'Noto Sans KR', sans-serif;*/
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+</style>
+<link rel="stylesheet" href="../common/css/reset.v1.css">
+<link rel="stylesheet" href="../common/css/headfoot.css">
+<link rel="stylesheet" href="../common/css/mediaqueriesPc.css">
+<link rel="stylesheet" href="../common/css/mediaqueries.css">
+<link rel="stylesheet" href="../common/css/mediaqueriesiP.css">
+<link rel="stylesheet" href="../common/css/mediaqueriesPh.css">
+<style>
+  body {
+    font-family:  'Noto Sans KR', sans-serif;
+    margin-top:105px;
+  }
+  #wrap {
+    font-size: 15px;
+  }
+  #intro {
+   width:350px;
+   margin:0 auto;
+   overflow: hidden;
+   padding-top: 15px;
+  }
+  h2 { /*SHIN HA EUN*/
+    font-size: 59px;
+    text-align: center;
+    letter-spacing:-3px;
+    height:50px; 
+  }
+  h2>strong {
+    font-weight: bold;
+  }
+  h3 {  /*about+contect*/
+    text-align: center;
+    border-top:1px solid #898989;
+    border-bottom:1px solid #898989;
+    width:330px;
+    margin:0 auto;
+    padding:7px 0 7px;
+    letter-spacing:2px;
+  }
+  #pic {  /*사진*/
+    width:132px;
+    height: 170px;
+    background-color:#313131;
+    margin:25px 0 0 10px;
+    float: left;
+    text-indent: -9999px;
+    background-image: url(../common/images/picture.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #info { /*이름생년월일*/
+    float: left;
+    margin:25px 0 0 25px;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+  }
+  #info > p {
+    font-size: 16px;
+    padding:8px 0 8px;
+  }
+  #box {
+    width:1200px;
+    margin:55px auto;
+  }
+  #box>div {
+    float: left;
+    margin:0 20px;
+  }
+  .title {
+    width:360px;
+
+  }
+  #skill {  /*스킬*/
+    overflow: hidden;
+    float: left;
+    margin:0 20px;
+  }
+  #skill>div {
+    margin-top:35px;
+  }
+  .title>p { /*제목부분*/
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    width:25%;
+  }
+  .title>span { /*제목 옆 줄*/
+    display: block;
+    height: 14px;
+    float: left;
+    width:75%;
+    border-bottom: 2px solid #000;
+
+  }
+  #gp { /*skill 묶는 div*/
+
+  }
+  #gp>article {
+    margin: 10px 0;
+  }
+  #gp>article>div,#gp>article>p {
+    float: left;
+  }
+  .s_box {
+    font-size:22px;
+    border:3px solid #000; 
+    width:43px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  .sk_txt { /*포토샵,일러,css,html글자*/
+    padding:10px 0 5px 14px;
+  }
+  .pc { /*퍼센트*/
+    padding:10px 0 5px;
+    font-size: 20px;
+    color:#00AFFF;
+
+  }
+  #gp>article>p.pc {
+    float: right;
+    padding-right: 10px;
+  }
+  .rod {
+    width:80%;
+    height: 49px;
+    padding-left: 14px;
+  }
+  .gp_blue {
+    background-color:#00AFFF;
+    width:90%;
+    height: 6px;
+    border-radius:2px;
+    margin-bottom: 3px;
+  }
+  #gp > article:nth-of-type(5)>.s_box {
+    letter-spacing: -1px;
+    font-size: 18px;
+  }
+  #gp>article:nth-of-type(2) .gp_blue,#gp>article:nth-of-type(4) .gp_blue,#gp>article:nth-of-type(5) .gp_blue {
+    width:80%;
+  }
+  #gp>article:nth-of-type(6) .gp_blue {
+    width:70%;
+  }
+  .gp_gray {
+    background-color: #939393;
+    width:100%;
+    height: 6px;
+    border-radius:2px;
+  }
+  
+  .cert>p { /*자격증*/
+    letter-spacing: 0;
+  }
+  .cert > article {
+    padding-top:35px;
+    padding-bottom: 35px;
+  }
+  .cert > article > div {
+    padding: 4px 0 4px 0
+  }
+  .cert > article > div > span:nth-of-type(1) {
+    display: inline-block;
+    width:25%;
+  }
+
+  .pro { /*프로그램*/
+    height: 120px;
+  }
+  .pro>article {
+    padding-top: 35px;
+  }
+  .pro >article>div{
+    background:url(../common/images/programs.png) no-repeat; 
+    height: 49px;
+    text-indent: -9999px; 
+  }
+  
+
+  .cr { /*커리어*/
+    
+  }
+  .cr > article {
+    padding:35px 0;
+  }
+  .cr > article > div {
+      padding:4px 0;
+  }
+  .cr > article > div > span:nth-of-type(1) {
+    width:40%;
+    display: inline-block;
+    letter-spacing: -0.5px;
+  }
+  .cr > article > div > span:nth-of-type(2) {
+    letter-spacing: -1px;
+  }
+  .hob { 
+    margin-bottom: 150px;
+   }
+  .hob > article {
+    padding:35px 0;
+  }
+  .icon{
+    float: left;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin:0 10px;
+  }
+  .icon > div {
+    background-image:url(../common/images/hobby.png);
+    width:50px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+  .icon:nth-of-type(2) > div {
+    background-position: -79px 0;
+  }
+  .icon:nth-of-type(3) > div {
+    background-position: -159px 0;
+  }
+
+  section > article {
+    padding-left: 10px;
+  }
+
+  @media all and (max-width:1190px) {
+   #box {
+      width:800px;
+    }
+  }
+  @media all and (max-width:799px) {
+   #box {
+      width:400px;
+    }
+  }
+  @media all and (max-width:376px) {
+    #skill {
+      margin:0 7px;
+    }
+  }
+  
+</style>
+<script src="../common/js/jquery-3.2.1.min.js"></script>
+<script src="../common/js/jquery-migrate-3.0.1.min.js"></script>
+<!-- 메뉴바 스크롤에 필요한 -->
+<script src="../common/js/scroll.js"></script>
+<script src="../common/js/jquery-ui.min.js"></script> <!-- 색깔바꾸는 -->
+<script src="../common/js/index.js"></script>
+</head>
+
+<body>
+<header class="outer page-header">
+  <div class="container"> 
+    <div id="trigger">menu</div>
+    <h1><a href="../index.html">logo</a></h1>
+    <nav class="pull-right">
+      <div id="close">menu</div>
+      <ul class="delist menu page-menu mn-lt">
+        <li><a href="about.html">About</a></li>
+        <li><a href="../index.html">Works</a></li>
+       </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="wrap">
+  <section id="intro">
+    <h2><strong>S</strong>HIN <strong>H</strong>A <strong>E</strong>UN</h2>
+    <h3>about + contect</h3>
+    <div id="pic">사진</div>
+    <div id="info">
+      <p>신하은</p>
+      <p>1995. 05. 24 (만22세)</p>
+      <p>suney524@naver.com</p>
+      <p>010-5954-5946</p>
+      <p>경기 안산시 상록구</p>
+    </div>
+  </section>
+
+  <div id="box">
+    <section id="skill" class="title">
+      <p>skill</p><span></span>
+      <div id="gp">
+        <article>
+            <div class="s_box">Ps</div>
+            <p class="sk_txt">Adobe Photoshop</p><p class="pc">90%</p>
+            <div class="rod">
+              <div class="gp_blue"></div>
+              <div class="gp_gray"></div>
+            </div>
+        </article>
+        <article>
+            <div class="s_box">Ai</div>
+            <p class="sk_txt">Adobe illustrator</p><p class="pc">80%</p>
+            <div class="rod">
+              <div class="gp_blue"></div>
+              <div class="gp_gray"></div>
+            </div>
+        </article>
+        <article>
+            <div class="s_box">Ht</div>
+            <p class="sk_txt">Html5</p><p class="pc">90%</p>
+            <div class="rod">
+              <div class="gp_blue"></div>
+              <div class="gp_gray"></div>
+            </div>
+        </article>
+        <article>
+            <div class="s_box">Cs</div>
+            <p class="sk_txt">Css3</p><p class="pc">80%</p>
+            <div class="rod">
+              <div class="gp_blue"></div>
+              <div class="gp_gray"></div>
+            </div>
+        </article>
+        <article>
+            <div class="s_box">Web</div>
+            <p class="sk_txt">웹표준</p><p class="pc">80%</p>
+            <div class="rod">
+              <div class="gp_blue"></div>
+              <div class="gp_gray"></div>
+            </div>
+        </article>
+        <article>
+            <div class="s_box">js</div>
+            <p class="sk_txt">jquery</p><p class="pc">70%</p>
+            <div class="rod">
+              <div class="gp_blue"></div>
+              <div class="gp_gray"></div>
+            </div>
+        </article>
+      </div>
+    </section>
+    <div>
+        <section class="title cert">
+            <p>Certificate</p><span></span>
+            <article>
+              <div>
+                <span>2013. 07</span>
+                <span>컴퓨터 그래픽스 운용기능사</span>
+              </div>
+              <div>
+                <span>2013. 09</span>
+                <span>GTQ 포토샵 1급</span>
+              </div>
+              <div>
+                <span>2014. 08</span>
+                <span>운전면허 1종 보통</span>
+              </div>
+            </article>
+        </section>
+
+        <section class="title pro">
+          <p>Program</p><span></span>
+          <article>
+            <div>프로그램사진</div>
+          </article>
+        </section>
+    </div>
+
+    <div>
+      <section class="title cr">
+        <p>Career</p><span></span>
+        <article>
+          <div>
+            <span>2017. 06 ~ 2017. 11</span>
+            <span>NCS UIUX 과정 수료</span>
+          </div>
+          <div>
+            <span>2011. 03 ~ 2014. 03</span>
+            <span>안산디자인문화고 시각디자인과 졸업</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="title hob">
+          <p>Hobby</p><span></span>
+          <article>
+              <div>
+                <div class="icon"><div></div><p>책읽기</p></div>
+                <div class="icon"><div></div><p>음악듣기</p></div>
+                <div class="icon"><div></div><p>카페가기</p></div>
+              </div>
+          </article>
+      </section>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

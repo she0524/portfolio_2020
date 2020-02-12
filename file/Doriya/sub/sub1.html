@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- 최신 IE 브라우저로 랜더링 출력 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>DORIYA</title>
+
+	<style>
+		font-family: 'Nanum Gothic', sans-serif;
+		@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+		
+
+	</style>
+	<link rel="stylesheet" href="../common/css/reset.v1.css">
+	<link rel="stylesheet" href="../common/css/basic.css">
+	<link rel="stylesheet" href="../common/css/sub1.css">
+	<link rel="stylesheet" href="../common/css/sub1_mediaqueries.css">
+
+	<script src="../common/js/prefixfree.min.js"></script>
+	<script src="../common/js/jquery-3.2.1.min.js"></script>
+	<script src="../common/js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="../common/js/index.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<div>
+			<!-- 검색박스 -->
+			<form class="form-wrapper cf">
+		        <input type="text" placeholder=" 검 색" required id="search">
+		        <button type="submit" id="submit">Search</button>
+		    </form>
+			
+			<!-- 로그인메뉴 -->
+		    <ul id="login">
+		    	<li><a href="#">로그인</a></li>
+		    	<li>|</li>
+		    	<li><a href="#">회원가입</a></li>
+		    	<li>|</li>
+		    	<li><a href="#">회원정보</a></li>
+		    	<li>|</li>
+		    	<li><a href="#">장바구니</a></li>
+		    </ul>
+		<nav>
+				<div id="trigger">menu</div>
+				<h1><a href="../index.html">로고</a></h1>
+				<ul id="gnb">
+					<li id="close"><div>close</div></li>
+					<li><a href="#">베스트</a></li>
+					<li><a href="#">주방</a></li>
+					<li><a href="#">식탁</a></li>
+					<li><a href="#">소품</a></li>
+					<li><a href="#">소풍</a></li>
+					<li><a href="#">욕실</a></li>
+					<li><a href="#">포장</a></li>
+					<li><a href="#">할인</a></li>
+					<li>|</li>
+					<li><a href="#">공지</a></li>
+					<li><a href="#">Q&A</a></li>
+				</ul>
+		</nav>
+		</div>
+	</header>
+	<!-- ****************************************************** -->
+<div class="subwrap">
+
+	<section class="gallery">
+		<ul class="smImg">
+			<li><img src="../common/images/sub_big_01.jpg" alt="mat발매트"></li>
+			<li><img src="../common/images/sub_big_02.jpg" alt="mat발매트남색"></li>
+			<li><img src="../common/images/sub_big_03.jpg" alt="mat발매트파랑"></li>
+			<li><img src="../common/images/sub_big_04.jpg" alt="mat발매트검정"></li>
+		</ul>
+		<div class="mainImg">
+			<img src="../common/images/sub_big_01.jpg" alt="mat발매트">
+		</div>
+	</section>
+
+	<script>
+			var btn = $('.smImg>li>img');
+
+			btn.click(function(){
+				i = $(this).attr('src');//클릭한 img의 src 속성을 변수에 저장
+				$('.mainImg>img').attr('src', i);//div 박스의 메인 이미지의 경로 속성 변경
+			});
+	</script>
+	<!-- ****************************************************** -->
+	<section class="info">
+		<article class="baseIf">
+			<h2>럭키피쉬 발매트(3color)</h2>
+			<h3>13,900 원</h3>
+
+			<h4>색상</h4>
+			<div class="clwrap">
+				<div class="colorOne">
+					<div><div></div></div>
+					<p>남색</p>
+				</div>
+				<div class="colorTwo">
+					<div><div></div></div>
+					<p>파랑</p>
+				</div>
+				<div class="colorThree">
+					<div><div></div></div>
+					<p>검정</p>
+				</div>
+			</div>
+			<script>
+				//색상을 클릭하면 해당 색상이미지가 보여라
+				$('.clwrap > div').eq(0).click(function(){
+					$('.smImg>li>img').eq(1).click();
+				});
+				$('.clwrap > div').eq(1).click(function(){
+					$('.smImg>li>img').eq(2).click();
+				});
+				$('.clwrap > div').eq(2).click(function(){
+					$('.smImg>li>img').eq(3).click();
+				});
+
+				$('.clwrap>div>div').click(function(){
+					$('.clwrap>div>div').removeClass('on');
+					$(this).addClass('on');
+					//나머지 박스들은 하얀색이 돼라
+				});
+
+/*스크립트*******************************************************************************/
+			</script>
+
+			<h4>사이즈</h4>
+			<div class="sizeBox">70cm x 50cm</div>
+			<script>
+				$('.sizeBox').click(function(){
+					$(this).toggleClass('gray');
+					$(this).toggleClass('white');
+				});
+			</script>
+			
+			<div class="cartwrap">
+				<select class="quantity">
+					<option>수량 : 1</option>
+					<option>수량 : 2</option>
+					<option>수량 : 3</option>
+					<option>수량 : 4</option>
+					<option>수량 : 5</option>
+					<option>수량 : 6</option>
+					<option>수량 : 7</option>
+					<option>수량 : 8</option>
+					<option>수량 : 9</option>
+					<option>수량 : 10</option>
+				</select>
+				
+				<div id="cart">
+					<div class="cart">장바구니</div>
+					<div class="wish"><div>하트</div><p>관심상품등록</p></div>
+				</div>
+			</div>
+			<script>
+				$('.wish').click(function(){
+					$('.wish>div').toggleClass('click');
+					$('.wish>div').toggleClass('noclick');
+				});
+			</script>
+<!-- 스크립트***************************************************************************** -->			
+		</article>
+		<article class="detailIf">
+			<div class="tabMenu">
+				<ul class="btnG">
+					<li>제품상세정보</li>
+					<li>세탁방법</li>
+				</ul>
+				<ul class="subG">
+					<li class="s1">
+					사이즈 : 가로 70cm x 세로 50cm (±3cm)<br>
+					소재 : 폴리에스테르 100% (바닥면 미끄럼방지처리)<br>
+					색상 : 남색, 파랑, 검정<br>
+					원산지 : 대한민국<br>
+					<br>
+					*특징<br>
+					- 3mm의 고급 극세사를 사용하여 흡수력과 배수력, 향균성이 우수하고, 감촉이 부드럽습니다.<br>
+					- 친환경 논슬립 처리로 밀림방지는 물론 건강과 환경을 생각합니다.<br>
+					- 물세탁이 가능하여 관리가 용이합니다.<br>
+					- 100% 국내제작으로 디자인과 발색은 물론 품질까지 믿을 수 있습니다.<br>
+					- 제작 결의 방향에 따라 디자인이 살짝 번져 보이거나 색상이 희끗해 보일 수 있습니다.<br>
+					 </li>
+					<li class="s2">
+					- 30도 이하의 찬물에 중성세제를 사용하세요.<br>
+					- 손세탁 또는 울코스로 세탁하세요.<br>
+					- 탈수는 약하게 단시간내 하고, 그늘에 뉘어서 건조하세요.<br>
+					- 열에 약함으로 세탁기의 건조기능이나 드라이기, 다리미를 사용하지 마세요.<br>
+					- 불이 옮겨 붙을 수 있음으로 화기를 멀리하세요.<br>
+					- 물에 오랫동안 담그지 마세요.<br>
+					- 드라이크리닝과 염소표백을 하지마세요.<br>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</section>
+	<script>
+	$('.btnG > li').click(function(){
+		var i = $(this).index();//클릭한 메뉴 li의 인덱스 번호를 변수로 저장
+		$('.subG > li').hide();//모든 서브 박스 숨김
+		$('.subG > li').eq(i).show();//서브 박스들 중, 변수에 저장된 값의 순서에 있는 박스만 보임
+		$('.btnG > li').eq(i).css({"border-bottom":"none"});
+		$('.btnG > li').eq(i).siblings().css({"border-bottom":"1px solid #cccccc"});
+	});
+	</script>
+
+
+
+	<section class="deliver">
+		<article>
+			<h2>안내사항</h2>
+			<p>모니터의 해상도나 조명에 따라 색상이 조금씩 달라보일 수 있습니다.<br>
+상품 상세컷을 확인해주세요.</p>
+		</article>
+		<article>
+			<h2>배송안내</h2>
+			<p>주문하신 상품들은 입고지연상품을 제외하면 입금 확인 후 2-5일 내로 수령하실 수 있습니다.<br>
+배송비는 5만원 미만 구매시 2,500원, 5만원 이상 구매시 무료배송 입니다.<br>
+단,산간벽지나 도서지방은 별도의 추가금액을 지불하셔야 하는 경우가 있습니다.</p>
+		</article>
+		<article>
+			<h2>교환/반품안내</h2>
+			<p>상품수령 후 24시간 이내로 게시판이나 전화를 통해 연락을 주시고, 7일 이내 상품을 도리야로 입고
+되어야 교환/반품 처리가 가능합니다. 고객변심으로 인한 교환/반품의 경우(색상, 사이즈 교환 포함)
+왕복배송비 5,000원이 소요되며 하자상품의 경우 무료 고한/반품 처리 됩니다.</p>
+		</article>
+		<article>
+			<h2>교환/반품이 불가능한 경우</h2>
+			<p>7일 이내 도리야로 반품 입고 되지 않은 경우. 상품이 훼손된 경우.<br>
+상품을 사용하거나 상품이 오염된경우. 세일 상품 </p>
+		</article>
+	</section>
+</div>
+	<!-- ****************************************************** -->
+	<footer>
+		<div id="foot-mn">
+			<ul>
+				<li>HOME</li>
+				<li>ABOUT US</li>
+				<li>AGREEMENT</li>
+				<li>GUIDE</li>
+				<li>개인정보취급방침</li>
+			</ul>
+		</div>
+		
+		<article>
+			<div id="number">
+				<p>CONTACT US</p>
+				<h6>02-1234-5678</h6>
+			</div>
+			<div id="weeks">
+				<p>월요일-금요일 <span>AM11:00 - PM4:00</span></p>
+				<p>점심시간 <span>PM1:00 - PM2:00</span></p>
+				<p><span>토요일.일요일&공휴일 OFF</span></p>
+			</div>
+			<div id="acount">
+				<p>계좌번호</p>
+				<p>신한은행 110-200-660000</p>
+				<p>예금주 : 신하은</p>
+			</div>
+		</article>
+
+		<div>
+			상호 : 제이사나(JSANA)  대표:박산하(doriya_@naver.com)  대표전화 : 02-6402-3262 주소 : 서울특별시 중랑구 동일로 144가길 28-11<br>
+사업자등록번호 : 204-25-30133[사업자등록확인]  통신판매업신고번호 : 2012-서울중량-0636 개인정보관리책임자 : 박산하
+		</div>
+	</footer>
+</div>
+</body>
+</html>

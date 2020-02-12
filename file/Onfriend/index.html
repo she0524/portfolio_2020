@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<!-- 최신 IE 브라우저로 랜더링 출력 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>온프렌즈</title>
+
+	<style>
+		/*font-family: 'Nanum Gothic', sans-serif;*/
+		@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+	</style>
+	<link rel="stylesheet" href="common/css/reset.v1.css">
+	<link rel="stylesheet" href="common/css/style.css">
+
+	<script src="common/js/prefixfree.min.js"></script>
+	<script src="common/js/jquery-3.2.1.min.js"></script>
+	<script src="common/js/jquery-migrate-3.0.1.min.js"></script>
+
+	<script>
+		$(function(){
+			$('.pop').show(function(){	
+			});
+			$('.pop input').click(function(){
+				$('.pop').hide();
+			});
+			$('#menu').mouseenter(function(){//내비게이션 영역위에 마우스를 올리면
+				$('#menu ul').stop().slideDown(200);
+			});
+			$('#menu').mouseleave(function(){//내비게이션 영역위에 마우스가 벗어났을때
+				$('#menu ul').stop().slideUp(400);
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="pop">
+		'온프렌즈소개'<br>'부설기구'<br><span>2개의 서브페이지가 있습니다 :)<span><br>
+
+		<p><span>체크하면 닫힙니다</span><input type="checkbox" alt="체크박스"></p>
+	</div>
+	<header>
+		<div>
+			<div id="nav">
+				<ul id="lt_nv">
+					<li>HOME</li>
+					<li>CANTACT US</li>
+					<li>전체메뉴보기</li>
+				</ul>
+				<ul id="rt_nv">
+					<li>로그인</li>
+					<li>|</li>
+					<li>회원가입</li>
+					<li>|</li>
+					<li>마이페이지</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div>	
+			<div id="menubar">
+				<a href="index.html"><h1>logo</h1></a>
+				<ul id="menu">
+					<li><a href="sub/about.html">온프렌즈소개</a>
+						<ul>
+							<li>온프렌즈는</li>
+							<li>연혁</li>
+							<li>CI소개</li>
+							<li>사업안내</li>
+							<li>재무 및 후원보고</li>
+							<li>함께 하는 사람들</li>
+							<li>찾아오시는 길</li>
+						</ul>
+					</li>
+					<li>알림게시판
+						<ul>
+							<li>정회원공지사항</li>
+							<li>일반공지사항</li>
+							<li>정회원게시판</li>
+							<li>자유게시판</li>
+						</ul>
+					</li>
+					<li>정책게시판
+						<ul>
+							<li>정책게시판</li>
+							<li>정책동향</li>
+							<li>정책자료</li>
+							<li>평가콜센터</li>
+							<li>함께풀어보아요</li>
+							<li>방과후게시판</li>
+						</ul>
+					</li>
+					<li>나눔게시판
+						<ul>
+							<li>지정기탁</li>
+							<li>단기배분</li>
+							<li>나눔정보</li>
+						</ul>
+					</li>
+					<li>일반게시판
+						<ul>
+							<li>후원하기</li>
+							<li>센터일상다반사</li>
+							<li>자원봉사 모집</li>
+							<li>자원봉사 신청</li>
+							<li>온라인바자회</li>
+						</ul>
+					</li>
+					<li><a href="sub/board.html">부설기구</a>
+						<ul>
+							<li>아동정책연구소</li>
+							<li>아동청소년인권센터</li>
+							<li>센터교육지원센터</li>
+						</ul>
+					</li>
+					<li>자료실
+						<ul>
+							<li>일반자료실</li>
+							<li>행정자료실</li>
+							<li>미디어자료실</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+<!-- <script>
+					$('#menu>li>ul>li').mouseenter(function(){
+						$(this).siblings().css({'color':'#000'});
+						$(this).css({'color':'#0AAA21'});
+					});
+</script> -->
+
+	<section id="main">
+		<article>main</article>
+	</section>
+
+	<section class="settwo">
+		<article class="tabMenu">
+			<div>
+				<ul class="btnG">
+					<li class="board">알림게시판</li>
+					<li class="board">정책게시판</li>
+					<li class="board">나눔게시판</li>
+					<li class="board">일반게시판</li>
+				</ul>
+				<ul class="subG">
+					<li class="s1">
+						<ul>
+							<li><a href="#">국회 앞 릴레이 1인 시위 안내 </a><span>2017. 11. 07</span></li>
+							<li><a href="#">[사무처 월감보고] 2017년 10월 월간보고 드립니다.</a><span>2017. 11. 03</span></li>
+							<li><a href="#">‘온종일돌봄과  지역아동센터의 역할 재정립’ 국회 컨퍼런스</a><span>2017. 11. 02</span></li>
+							<li><a href="#">지원채용재공고(자원개발나눔국)</a><span>2017. 10. 30</span></li>
+							<li><a href="#">11월 1일 국회컨퍼런스 참석요청 공문</a><span>2017. 10. 26</span></li>
+						</ul>
+					</li>
+					<li class="s2">
+						<ul>
+							<li><a href="#">지역아동센터 발전과제(1) 성과의 조직화 </a><span>2017. 11. 07</span></li>
+							<li><a href="#">공공화 어젠더(3) -운영주체변경 사례모집 안내 </a><span>2017. 11. 07</span></li>
+							<li><a href="#">지역아동센터 공공화 어젠더 - 연구팀 1, 2차 보고서 </a><span>2017. 11. 07</span></li>
+							<li><a href="#">'우수지역아동센터 지원'예산에 대한 반대입장 표명 </a><span>2017. 11. 07</span></li>
+							<li><a href="#">새정부 국정과제 내용 중 지역아동센터 관련 부분 안내드립니다. </a><span>2017. 11. 07</span></li>
+						</ul>
+					</li>
+					<li class="s3">
+						<ul>
+							<li><a href="#">[노무현재단] 2017년 단감 지원사업 최종 선정 공지 </a><span>2017. 11. 07</span></li>
+							<li><a href="#">[기업은행 노동조합] 지역아동센터 장학지원사업 "2017년... </a><span>2017. 11. 07</span></li>
+							<li><a href="#">[무궁화복지월드] 지역아동센터 도서지원사업(5) </a><span>2017. 11. 07</span></li>
+							<li><a href="#">(지부배분알림) SK텔레콤 키코 지원사업 </a><span>2017. 11. 07</span></li>
+							<li><a href="#">[지멘스] 지멘스 이동건강검진사업 서류심사 결과 공지 </a><span>2017. 11. 07</span></li>
+						</ul>
+					</li>
+					<li class="s4">
+						<ul>
+							<li><a href="#">[서울]센터장을 모집합니다. </a><span>2017. 11. 07</span></li>
+							<li><a href="#">[경기]돌봄도우미 모집공고 </a><span>2017. 11. 07</span></li>
+							<li><a href="#">[전국]"급구" 생활복지사 모집 </a><span>2017. 11. 07</span></li>
+							<li><a href="#">[서울]사회복지사 구함 </a><span>2017. 11. 07</span></li>
+							<li><a href="#">[서울]실습생 모집 </a><span>2017. 11. 07</span></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<a href="#">더보기</a>
+		</article>
+<script>
+	$('.btnG > li').click(function(){
+		$(this).siblings().css({'background-color':'#f8f8f8','border':'solid 1px #e8e8e8','color':'#000'});
+		$(this).css({'background-color':'#fff','border-bottom':'none','color':'#4b9af4'})
+
+		var i = $(this).index();//클릭한 메뉴 li의 인덱스 번호를 변수로 저장
+		$('.subG > li').hide();//모든 서브 박스 숨김
+		$('.subG > li').eq(i).show().css({'background-color':'#fff'});//서브 박스들 중, 변수에 저장된 값의 순서에 있는 박스만 보임
+	});
+</script>
+
+		<article class="part2">
+			<div>
+				<img src="common/images/img_01.jpg" alt="함께풀어보아요">
+				<h3>함께 풀어보아요</h3>
+				<p>지역 아동센터 운영관리에 관한 현장 선생님들의 의견을 나누는 소통공간 입니다.</p>
+				<span><a href="#">더보기</a></span>
+			</div>
+			<div>
+				<img src="common/images/img_02.jpg" alt="나홀로 아동 Zero 프로젝트">
+				<h3>나홀로 아동 Zero 프로젝트</h3>
+				<p>240만 명의 나홀로 아동. 함께하면 지킬 수 있습니다.</p>
+				<span><a href="#">더보기</a></span>
+			</div>
+		</article>
+	</section>
+
+	<section class="today">
+		<div>
+			<h2>온프렌즈의 오늘</h2>
+			<p>선</p>
+
+			<article>
+				<img src="common/images/img_03.jpg" alt="온라인 바자회">
+				<h4>온라인 바자회</h4>
+				<p>지역아동센터, 온프렌즈 10주년 기념사업 기금 마련을 위한 바자회</p>
+			</article>
+			<article>
+				<img src="common/images/img_04.jpg" alt="아이들을 위한 팔찌">
+				<h4>아이들을 위한 팔찌</h4>
+				<p>당신의 참여로 240만 '나홀로아동'을 지킬 수 있습니다.</p>
+			</article>
+			<article>
+				<img src="common/images/img_05.jpg" alt="들녘">
+				<h4>들녘</h4>
+				<p>평화와 생명의 농사 공동체 '동녘' 착한 소비가 곧 나눔의 시작 입니다.</p>
+			</article>
+			<article>
+				<img src="common/images/img_06.jpg" alt="방과후 활동 365">
+				<h4>방과후 활동 365</h4>
+				<p>매일 프로그램 고민 없이 아이들과 즐거운 시간을 보낼 수 있는 프로그램 아이디어 북!</p>
+			</article>
+		</div>
+	</section>
+
+	<section class="hope">
+		<article>
+			<p>아동 청소년 장학 지원 사업</p>
+			<span>선</span>
+			<p class="hopeS">지역아동센터<br>희망 등대 세우기</p>
+			<div><a href="#">자세히 보기</a></div>
+		</article>
+	</section>
+
+	<section class="today_2">
+		<div>
+			<h2>일상다반사</h2>
+			<p>선</p>
+
+			<article>
+				<img src="common/images/img_07.jpg" alt="솔샘지역아동센터">
+				<h4>솔샘지역아동센터</h4>
+				<p>센터 친구들과 함께하고 싶은 활동애 대해 얘기를 나누었습니다.</p>
+			</article>
+			<article>
+				<img src="common/images/img_08.jpg" alt="누리미지역아동센터">
+				<h4>누리미지역아동센터</h4>
+				<p>야간보호 아이들과 함께 롯데월드 아쿠아리움으로 문화활동을 다녀왔습니다.</p>
+			</article>
+			<article>
+				<img src="common/images/img_09.jpg" alt="CLC희망학교지역아동센터">
+				<h4>CLC희망학교지역아동센터</h4>
+				<p>사회복지공동모금회의 지원을 받아 청소년들위한 진로교육을 진행하고 있습니다.</p>
+			</article>
+			<article>
+				<img src="common/images/img_10.jpg" alt="소나무지역아동센터">
+				<h4>소나무지역아동센터</h4>
+				<p>길위의 인문학-남도향토 음식 박물관 체험을 하고 왔습니다.</p>
+			</article>
+			<article>
+				<img src="common/images/img_11.jpg" alt="성주지역아동센터">
+				<h4>성주지역아동센터</h4>
+				<p>아이들이 원하던 야외활동으로 명랑운동회 행사에 참여하였습니다.</p>
+			</article>
+			<article>
+				<img src="common/images/img_12.jpg" alt="의정부나눔공부방">
+				<h4>의정부나눔공부방</h4>
+				<p>원예수업, 악기 함주, 우쿠렐레, 자원봉사 활동등의 활동을 하였습니다.</p>
+			</article>
+			<article>
+				<img src="common/images/img_13.jpg" alt="그린리버지역아동센터">
+				<h4>그린리버지역아동센터</h4>
+				<p>세스코의 지원으로 키자니아 체험을 하고 왔습니다.</p>
+			</article>
+			<article>
+				<img src="common/images/img_14.jpg" alt="용산지역아동센터">
+				<h4>용산지역아동센터</h4>
+				<p>아이들과 10월의 축제에 참여하여 자신감과 성취감을 느낄 수 있도록 하였습니다.</p>
+			</article>
+		</div>
+	</section>
+	
+	<section class="data">
+		<div class="data_wp">
+			<article>
+					<img src="common/images/img_15.jpg" alt="통합자료실">
+					<h5>통합자료실</h5>
+					<p>온프렌즈의 행정자료실</p>
+			</article>
+			<article>
+					<img src="common/images/img_16.jpg" alt="멀티미디어 자료실">
+					<h5>멀티미디어 자료실</h5>
+					<p>온프렌즈의 최신사진, 영상</p>
+			</article>
+
+			<article>
+				<div>나눔기업</div>
+				<img src="common/images/logo_04.jpg" alt="해피나눔">
+				<img src="common/images/logo_05.jpg" alt="중앙원격평생교육원">
+				<img src="common/images/logo_06.jpg" alt="생활속기부쇼핑몰" class="lg_last">
+			</article>
+			<article>
+				<div>유관단체</div>
+				<img src="common/images/logo_01.jpg" alt="보건복지부">
+				<img src="common/images/logo_02.jpg" alt="여성가족부">
+				<img src="common/images/logo_03.jpg" alt="사랑의열매" class="lg_last">
+			</article>
+		</div>
+	</section>
+
+	<footer>
+		<div class="ft_wp">
+			<ul>
+				<li>홈페이지 개선 요청</li>
+				<li>홈페이지 이용 안내</li>
+				<li>개인정보 처리방침</li>
+				<li>이메일무단수집거부</li>
+				<li>찾아오시는 길</li>
+			</ul>
+			<ul class="link">
+				<li>페이스북</li>
+				<li>트위터</li>
+				<li>유튜브</li>
+				<li>해피빈</li>
+				<li>네이버블로그</li>
+			</ul>
+
+			<h1>로고</h1>
+			<p>Since 2003. 사단법인 전국지역아동센터협의회   주소 서울시 영등포구 영중로 95 선일빌등 3층  우편번호 150-037 | 대표전화 02.732.7979   팩스 02.732.7980
+			후원계좌 우리은행 1005-001-454142   회비납부계좌 농협 001-01-327297   예금주 (사)전지협  
+			이메일 kaccc@kaccc.org 법인으로 이메일 보내기 [지부전용웹메일]
+			</p>
+
+			<select>
+				<option>전국16지부 바로가기</option>
+				<option>서울</option>
+				<option>제주</option>
+				<option>부산</option>
+				<option>대구</option>
+				<option>인천</option>
+				<option>광주</option>
+				<option>대전</option>
+				<option>울산</option>
+				<option>경기</option>
+				<option>강원</option>
+				<option>충북</option>
+				<option>충남</option>
+				<option>전북</option>
+				<option>전남</option>
+				<option>경남</option>
+			</select>
+
+			<span><a href="">top</a></span>
+		</div>
+	</footer>
+
+</body>
+</html>

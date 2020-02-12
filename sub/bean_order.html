@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--뷰포트 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>SHE's</title>
+<style>
+/*font-family: 'PT Serif', serif;*/
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+</style>
+<link rel="stylesheet" href="../common/css/reset.v1.css">
+<link rel="stylesheet" href="../common/css/style.css">
+<link rel="stylesheet" href="../common/css/content.css">
+<link rel="stylesheet" href="../common/css/mediaqueriesPc.css">
+<link rel="stylesheet" href="../common/css/mediaqueries.css">
+<link rel="stylesheet" href="../common/css/mediaqueriesiP.css">
+<link rel="stylesheet" href="../common/css/mediaqueriesPh.css">
+<style>
+body {
+	overflow-x:hidden;
+	min-width:1100px;
+}
+  img {
+    width:1100px;
+    margin:0 auto;
+    display:block;
+    z-index: 1000;
+    position: relative;
+	
+  }
+  .img_color {
+    height: 812px;
+    width:100%;
+    background-color: #f4c724;
+    position: absolute;
+    z-index: 10;
+	
+  }
+  @media all and (max-width:1100px){
+      img {
+        width:100%;
+      }
+    }
+</style>
+<script src="../common/js/jquery-3.2.1.min.js"></script>
+<script src="../common/js/jquery-migrate-3.0.1.min.js"></script>
+<!-- 메뉴바 스크롤에 필요한 -->
+<script src="../common/js/scroll.js"></script>
+<script src="../common/js/jquery-ui.min.js"></script> <!-- 색깔바꾸는 -->
+<script src="../common/js/index.js"></script>
+
+</head>
+
+<body>
+<header class="outer page-header">
+  <div class="container"> 
+    <div id="trigger">menu</div>
+    <h1><a href="../index.html">logo</a></h1>
+    <nav class="pull-right">
+      <div id="close">menu</div>
+      <ul class="delist menu page-menu mn-lt">
+        <li><a href="about.html">About</a></li>
+        <li><a href="../index.html">Works</a></li>
+       </ul>
+    </nav>
+    
+  </div>
+</header>
+
+  <div class="img_color"></div>
+  <img src="../common/images/content_beanorder.jpg" alt="bean order" usemap="#Map">
+  <map name="Map">
+    <area shape="rect" coords="250,5319,372,5438" href="https://marvelapp.com/4gj6i6i" target="_blank">
+    <area shape="rect" coords="709,5315,832,5438" href="../file/Bean_order.pdf" target="_blank">
+  </map>
+  
+
+
+  <footer>
+    <span>
+    <div id="about" onclick="location.href='about.html'">about</div>
+      <p>ⓒ 2017 She All rights reserved.</p>
+    </span>
+  </footer>
+</body>
+</html>

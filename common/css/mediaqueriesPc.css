@@ -1,0 +1,14 @@
+@media all and (max-width:1201px) {
+	/*.wrap > article:nth-of-type(2) .bg > .imgBox {
+	  background-color: #68543F;
+	  color:#fff;
+	}
+	.wrap > article:nth-of-type(2) .bg > .imgBox>a:hover {
+	   background-image: url(../images/pf_02.jpg);
+	}*/
+	.intro p { 
+		bottom:-93px;
+	}
+
+
+}
